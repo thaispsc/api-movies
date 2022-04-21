@@ -1,7 +1,8 @@
 const Gender = require("../models/Gender");
+
 const GenderController = {
     async listar(req, res) {
-        const genders = await Gender.findAll()
+        const genders = await Gender.findAll();
         res.json(genders);
     }
 };
